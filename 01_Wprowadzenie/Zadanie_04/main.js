@@ -14,7 +14,7 @@ function testVars() {
 	var chomik = "syryjski";
 }
 
-
+// console.log(a); => zmienna a jest w przestrzeni blokowej i nie mamy dostępu do niej poza blokiem.
 /*
 Wnioski:
 
