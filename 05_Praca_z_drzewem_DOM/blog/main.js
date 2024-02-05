@@ -75,3 +75,26 @@ menu.append(liToCopy);
 const elToDel = document.querySelector(".about-me-title");
 console.log(elToDel);
 elToDel.remove();
+
+//Zadanie 1
+// Wykorzystaj selektor nagłówka, który utworzyliśmy w poprzednim rozdziale.
+//
+// Za jego pomocą zmień kolor nagłówka na dowolny wybrany,
+// powiększ rozmiar fontu i dodaj podkreślenie.
+console.log(header, "nagłówek");
+console.log(header.style, "header.style");
+header.style.color = "deeppink";
+header.style.fontSize = "36px";
+header.style.textDecoration = "underline";
+
+//Zadanie 2
+
+const formButton = document.querySelector(".form-button");
+formButton.addEventListener("click", function () {
+    console.log(this);
+    blogForm.classList.add("hide");
+    const text = document.createElement("h3");
+    text.innerText = "Wiadomość została wysłana";
+    text.className = "about-blog__content-title";
+    blogForm.before(text);
+});
