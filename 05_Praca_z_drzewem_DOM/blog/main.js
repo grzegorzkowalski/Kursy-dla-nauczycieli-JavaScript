@@ -28,3 +28,20 @@ const wwsiLogo = "https://wwsi.edu.pl/wp-content/themes/hello-theme-child-master
 picture.setAttribute("src", wwsiLogo);
 
 //Dokończyć wspólnie od podpunktu 4
+console.log(blogForm.innerHTML, "formularz");
+mail.setAttribute("href", "mailto:gk@wp.pl");
+console.log(mail, "mail");
+
+const headerClassname = header.className;
+const headerClasslist = header.classList;
+console.log(headerClassname);
+console.log(headerClasslist[0]);
+header.className = "";
+console.log(header.className);
+header.classList.remove("about-blog__content-title");
+console.log(header.classList);
+
+const title = document.querySelector(".first-article__text-title");
+//title.className += " " + headerClassname;
+title.classList.toggle(headerClassname);
+title.classList.toggle("first-article__text-title");
