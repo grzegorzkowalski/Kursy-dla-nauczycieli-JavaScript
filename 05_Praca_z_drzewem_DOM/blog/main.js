@@ -45,3 +45,14 @@ const title = document.querySelector(".first-article__text-title");
 //title.className += " " + headerClassname;
 title.classList.toggle(headerClassname);
 title.classList.toggle("first-article__text-title");
+
+//Zdanie 4
+
+const newLi = document.createElement("li");
+const newA = document.createElement("a");
+newA.href = "https://wwsi.edu.pl";
+newA.textContent = "WWSI";
+newLi.append(newA);
+const menu = document.querySelector("ul");
+menu.append(newLi);
+menu.style.width = "70%";
