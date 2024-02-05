@@ -55,4 +55,23 @@ newA.textContent = "WWSI";
 newLi.append(newA);
 const menu = document.querySelector("ul");
 menu.append(newLi);
-menu.style.width = "70%";
+menu.style.width = "80%";
+
+//Zadanie 5
+
+const elementToCopyList = document.querySelectorAll("ul li");
+const dotToCopy = elementToCopyList[0].cloneNode(true);
+const liToCopy = elementToCopyList[1].cloneNode(true);
+console.log(dotToCopy, "skopiowana kropka");
+console.log(liToCopy, "skopiowane li");
+
+liToCopy.querySelector("a").href = "https://wp.pl";
+liToCopy.querySelector("a").textContent = "wp.pl";
+menu.append(dotToCopy);
+menu.append(liToCopy);
+
+//Zadanie 6
+
+const elToDel = document.querySelector(".about-me-title");
+console.log(elToDel);
+elToDel.remove();
