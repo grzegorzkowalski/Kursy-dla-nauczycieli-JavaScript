@@ -98,3 +98,11 @@ formButton.addEventListener("click", function () {
     text.className = "about-blog__content-title";
     blogForm.before(text);
 });
+
+//Zadanie 3
+
+const laosHeader = document.querySelector(".about-blog__content--welcome-text p");
+console.log(laosHeader);
+laosHeader.style.color = "deeppink";
+document.querySelector(".about-blog__content--welcome-text")
+    .previousElementSibling.style.backgroundImage = "url(https://www.state.gov/wp-content/uploads/2019/04/Laos-2500x1406.jpg)";
